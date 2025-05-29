@@ -22,5 +22,7 @@ const hookClick = (e) => {
         console.log('not handle origin', origin)
     }
 }
-
+document.addEventListener("oncontextmenu",function(evt){
+		evt.preventDefault()
+})
 document.addEventListener('click', hookClick, { capture: true })
